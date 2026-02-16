@@ -176,11 +176,7 @@ It represents the kind of work expected in **biostatistics, data science, clinic
 
 ---
 
-# ** Professional Project Introduction (LinkedIn / Portfolio)**
-
-Here is a polished introduction you can paste directly into LinkedIn, your portfolio, or your GitHub project description:
-
----
+# **Professional Project Introduction (LinkedIn / Portfolio)**
 
 ### **BMI & Stroke Ordinal Logistic Regression — NHIS 2018 (SAS, R, Python)**  
 I completed a full categorical data analysis using the 2018 National Health Interview Survey (NHIS) to evaluate whether stroke history is associated with BMI category among adults aged 40+. What began as a graduate‑level SAS assignment evolved into a fully professional, cross‑platform analytical pipeline implemented in **SAS**, **R**, and **Python**.
