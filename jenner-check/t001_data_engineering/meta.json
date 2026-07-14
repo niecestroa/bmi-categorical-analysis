@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_data_engineering",
+  "source_file": "professional/code/BMI Categorical Updated.sas",
+  "source_blob_sha": "d6fe660671d0c3fadc98ed8119adde2d16ebb17d",
+  "source_commit": "383385881df8ad42ae7b5b4f718277b36db67eab",
+  "notes": "Section 2-3 derived-variable DATA step (BMI_CAT/STROKE_CAT/AGE_CAT/SEX_CAT via select/when, cats, ifc + inclusion criteria) then PROC CONTENTS/FREQ/MEANS on the analysis dataset. NHIS.SAMADULT is a synthetic 30-row sample (no real NHIS microdata shipped); the script's derived-variable logic and PROCs are unmodified."
+}
