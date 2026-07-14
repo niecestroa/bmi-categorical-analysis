@@ -1,0 +1,724 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: NHIS.SAMADULT3
+Observations:  30
+Variables:     13
+
+Variables (in alphabetical order):
+
+  #  Variable       Type    Len  Format  Label
+---  -------------  ----  -----  ------  -----
+  1  AGE_CAT        Char     20          
+  2  AGE_P           Num      8          
+  3  BMI             Num      8          
+  4  BMI_CAT        Char     20          
+  5  MRACBPI2        Num      8          
+  6  R_MARITL        Num      8          
+  7  SEX             Num      8          
+  8  SEX_CAT        Char     20          
+  9  STREV           Num      8          
+ 10  STROKE_CAT     Char     20          
+ 11  WEIGHT_ACTIVE  Char     20          
+ 12  WEIGHT_AGE     Char     20          
+ 13  WEIGHT_STROKE  Char     20          
+
+-------------------------------------------------------------------------------
+
+                                                   The FREQ Procedure
+
+BMI_CAT               Frequency    Percent
+-------------------------------------------
+1 Normal                      8     26.67
+2 Overweight                  8     26.67
+3 Moderately Obese            9     30.00
+4 Severely Obese              5     16.67
+
+STROKE_CAT    Frequency    Percent
+-----------------------------------
+1 Yes                 4     13.33
+2 No                 26     86.67
+
+AGE_P    Frequency    Percent
+------------------------------
+40               1      3.33
+41               1      3.33
+43               1      3.33
+44               1      3.33
+45               1      3.33
+46               1      3.33
+47               1      3.33
+49               1      3.33
+51               1      3.33
+52               1      3.33
+53               1      3.33
+55               1      3.33
+56               1      3.33
+57               1      3.33
+58               1      3.33
+59               1      3.33
+61               1      3.33
+62               1      3.33
+63               1      3.33
+64               1      3.33
+66               1      3.33
+68               1      3.33
+69               1      3.33
+71               1      3.33
+72               1      3.33
+74               1      3.33
+77               1      3.33
+79               1      3.33
+81               1      3.33
+82               1      3.33
+
+R_MARITL    Frequency    Percent
+---------------------------------
+1                  14     46.67
+2                   1      3.33
+4                   5     16.67
+5                   8     26.67
+7                   2      6.67
+
+WEIGHT_STROKE    Frequency    Percent
+--------------------------------------
+1Yes                     4     13.33
+2No                     26     86.67
+
+WEIGHT_AGE    Frequency    Percent
+-----------------------------------
+1Yes                  2      6.67
+2No                  28     93.33
+
+WEIGHT_ACTIVE    Frequency    Percent
+--------------------------------------
+1Yes                     2      6.67
+2No                     28     93.33
+
+MRACBPI2    Frequency    Percent
+---------------------------------
+1                  21     70.00
+2                   9     30.00
+
+SEX    Frequency    Percent
+----------------------------
+1             15     50.00
+2             15     50.00
+
+AGE_CAT        Frequency    Percent
+------------------------------------
+1 AGE=40-49            8     26.67
+2 AGE=50-59            8     26.67
+3 AGE=60-69            7     23.33
+4 AGE=70-79            5     16.67
+5 AGE=80+              2      6.67
+                                                   The FREQ Procedure
+
+Table of WEIGHT_STROKE by STROKE_CAT
+
+WEIGHT_STROKE |     1 Yes |      2 No |      Total
+--------------+-----------+-----------+-----------
+1Yes          |         1 |         3 |          4
+              |      3.33 |     10.00 |      13.33
+              |     25.00 |     75.00 |     100.00
+              |     25.00 |     11.54 |      13.33
+--------------+-----------+-----------+-----------
+2No           |         3 |        23 |         26
+              |     10.00 |     76.67 |      86.67
+              |     11.54 |     88.46 |     100.00
+              |     75.00 |     88.46 |      86.67
+--------------+-----------+-----------+-----------
+Total         |         4 |        26 |         30
+
+Statistics for Table of WEIGHT_STROKE by STROKE_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                1 0.5436       0.4609
+Likelihood Ratio Chi-Square               1 0.4652       0.4952
+Fisher's Exact Test                                      0.4545
+
+Phi Coefficient                      0.1346
+Contingency Coefficient              0.1334
+Cramer's V                           0.1346
+
+WARNING: 75% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of WEIGHT_STROKE by STROKE_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.1346
+Cramer's V                           0.1346
+Contingency Coefficient              0.1334
+Gamma                                0.4375
+Kendall's Tau-b                      0.1346
+Stuart's Tau-c                       0.0622
+Somers' D C|R (SMDCR)                0.1346
+Somers' D R|C (SMDRC)                0.1346
+Pearson Correlation                  0.1346
+Spearman Correlation                 0.1346
+
+
+Cochran-Mantel-Haenszel Statistics for Table of WEIGHT_STROKE by STROKE_CAT
+
+Statistic                             Value     DF         Prob
+--------------------------------------------------------------
+Nonzero Correlation                  0.5255      1       0.4685
+Row Mean Scores Differ               0.5255      1       0.4685
+General Association                  0.5255      1       0.4685
+
+
+Table of WEIGHT_ACTIVE by STROKE_CAT
+
+WEIGHT_ACTIVE |     1 Yes |      2 No |      Total
+--------------+-----------+-----------+-----------
+1Yes          |         1 |         1 |          2
+              |      3.33 |      3.33 |       6.67
+              |     50.00 |     50.00 |     100.00
+              |     25.00 |      3.85 |       6.67
+--------------+-----------+-----------+-----------
+2No           |         3 |        25 |         28
+              |     10.00 |     83.33 |      93.33
+              |     10.71 |     89.29 |     100.00
+              |     75.00 |     96.15 |      93.33
+--------------+-----------+-----------+-----------
+Total         |         4 |        26 |         30
+
+Statistics for Table of WEIGHT_ACTIVE by STROKE_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                1 2.4931       0.1143
+Likelihood Ratio Chi-Square               1 1.7199       0.1897
+Fisher's Exact Test                                      0.2529
+
+Phi Coefficient                      0.2883
+Contingency Coefficient              0.2770
+Cramer's V                           0.2883
+
+WARNING: 75% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of WEIGHT_ACTIVE by STROKE_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.2883
+Cramer's V                           0.2883
+Contingency Coefficient              0.2770
+Gamma                                0.7857
+Kendall's Tau-b                      0.2883
+Stuart's Tau-c                       0.0978
+Somers' D C|R (SMDCR)                0.3929
+Somers' D R|C (SMDRC)                0.2115
+Pearson Correlation                  0.2883
+Spearman Correlation                 0.2883
+
+
+Cochran-Mantel-Haenszel Statistics for Table of WEIGHT_ACTIVE by STROKE_CAT
+
+Statistic                             Value     DF         Prob
+--------------------------------------------------------------
+Nonzero Correlation                  2.4100      1       0.1206
+Row Mean Scores Differ               2.4100      1       0.1206
+General Association                  2.4100      1       0.1206
+
+
+Table of WEIGHT_AGE by STROKE_CAT
+
+WEIGHT_AGE |     1 Yes |      2 No |      Total
+-----------+-----------+-----------+-----------
+1Yes       |         0 |         2 |          2
+           |      0.00 |      6.67 |       6.67
+           |      0.00 |    100.00 |     100.00
+           |      0.00 |      7.69 |       6.67
+-----------+-----------+-----------+-----------
+2No        |         4 |        24 |         28
+           |     13.33 |     80.00 |      93.33
+           |     14.29 |     85.71 |     100.00
+           |    100.00 |     92.31 |      93.33
+-----------+-----------+-----------+-----------
+Total      |         4 |        26 |         30
+
+Statistics for Table of WEIGHT_AGE by STROKE_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                1 0.3297       0.5659
+Likelihood Ratio Chi-Square               1 0.5940       0.4409
+Fisher's Exact Test                                      1.0000
+
+Phi Coefficient                      0.1048
+Contingency Coefficient              0.1043
+Cramer's V                           0.1048
+
+WARNING: 75% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of WEIGHT_AGE by STROKE_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                     -0.1048
+Cramer's V                           0.1048
+Contingency Coefficient              0.1043
+Gamma                               -1.0000
+Kendall's Tau-b                     -0.1048
+Stuart's Tau-c                      -0.0356
+Somers' D C|R (SMDCR)               -0.1429
+Somers' D R|C (SMDRC)               -0.0769
+Pearson Correlation                 -0.1048
+Spearman Correlation                -0.1048
+
+
+Cochran-Mantel-Haenszel Statistics for Table of WEIGHT_AGE by STROKE_CAT
+
+Statistic                             Value     DF         Prob
+--------------------------------------------------------------
+Nonzero Correlation                  0.3187      1       0.5724
+Row Mean Scores Differ               0.3187      1       0.5724
+General Association                  0.3187      1       0.5724
+
+
+Table of SEX by STROKE_CAT
+
+SEX |     1 Yes |      2 No |      Total
+----+-----------+-----------+-----------
+1   |         2 |        13 |         15
+    |      6.67 |     43.33 |      50.00
+    |     13.33 |     86.67 |     100.00
+    |     50.00 |     50.00 |      50.00
+----+-----------+-----------+-----------
+2   |         2 |        13 |         15
+    |      6.67 |     43.33 |      50.00
+    |     13.33 |     86.67 |     100.00
+    |     50.00 |     50.00 |      50.00
+----+-----------+-----------+-----------
+Total |         4 |        26 |         30
+
+Statistics for Table of SEX by STROKE_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                1 0.0000       1.0000
+Likelihood Ratio Chi-Square               1 0.0000       1.0000
+Fisher's Exact Test                                      0.9996
+
+Phi Coefficient                      0.0000
+Contingency Coefficient              0.0000
+Cramer's V                           0.0000
+
+WARNING: 50% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of SEX by STROKE_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.0000
+Cramer's V                           0.0000
+Contingency Coefficient              0.0000
+Gamma                                0.0000
+Kendall's Tau-b                      0.0000
+Stuart's Tau-c                       0.0000
+Somers' D C|R (SMDCR)                0.0000
+Somers' D R|C (SMDRC)                0.0000
+Pearson Correlation                  0.0000
+Spearman Correlation                 0.0000
+
+
+Cochran-Mantel-Haenszel Statistics for Table of SEX by STROKE_CAT
+
+Statistic                             Value     DF         Prob
+--------------------------------------------------------------
+Nonzero Correlation                  0.0000      1       1.0000
+Row Mean Scores Differ               0.0000      1       1.0000
+General Association                  0.0000      1       1.0000
+
+
+Table of AGE_CAT by STROKE_CAT
+
+AGE_CAT     |     1 Yes |      2 No |      Total
+------------+-----------+-----------+-----------
+1 AGE=40-49 |         0 |         8 |          8
+            |      0.00 |     26.67 |      26.67
+            |      0.00 |    100.00 |     100.00
+            |      0.00 |     30.77 |      26.67
+------------+-----------+-----------+-----------
+2 AGE=50-59 |         1 |         7 |          8
+            |      3.33 |     23.33 |      26.67
+            |     12.50 |     87.50 |     100.00
+            |     25.00 |     26.92 |      26.67
+------------+-----------+-----------+-----------
+3 AGE=60-69 |         2 |         5 |          7
+            |      6.67 |     16.67 |      23.33
+            |     28.57 |     71.43 |     100.00
+            |     50.00 |     19.23 |      23.33
+------------+-----------+-----------+-----------
+4 AGE=70-79 |         0 |         5 |          5
+            |      0.00 |     16.67 |      16.67
+            |      0.00 |    100.00 |     100.00
+            |      0.00 |     19.23 |      16.67
+------------+-----------+-----------+-----------
+5 AGE=80+   |         1 |         1 |          2
+            |      3.33 |      3.33 |       6.67
+            |     50.00 |     50.00 |     100.00
+            |     25.00 |      3.85 |       6.67
+------------+-----------+-----------+-----------
+Total       |         4 |        26 |         30
+
+Statistics for Table of AGE_CAT by STROKE_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                4 5.7383       0.2196
+Likelihood Ratio Chi-Square               4 6.3838       0.1723
+
+Cramer's V                           0.4374
+Contingency Coefficient              0.4007
+
+WARNING: 70% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of AGE_CAT by STROKE_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.4374
+Cramer's V                           0.4374
+Contingency Coefficient              0.4007
+Gamma                               -0.4651
+Kendall's Tau-b                     -0.2106
+Stuart's Tau-c                      -0.1778
+Somers' D C|R (SMDCR)               -0.1153
+Somers' D R|C (SMDRC)               -0.3846
+Pearson Correlation                 -0.2389
+Spearman Correlation                -0.2330
+
+
+Cochran-Mantel-Haenszel Statistics for Table of AGE_CAT by STROKE_CAT
+
+Statistic                             Value     DF         Prob
+--------------------------------------------------------------
+Nonzero Correlation                  1.6547      1       0.1983
+Row Mean Scores Differ               5.5470      4       0.2356
+General Association                  5.5470      4       0.2356
+
+                                                   The FREQ Procedure
+
+Table of STROKE_CAT by BMI_CAT
+
+STROKE_CAT |          1 Normal |      2 Overweight |3 Moderately Obese |  4 Severely Obese |              Total
+-----------+-------------------+-------------------+-------------------+-------------------+-------------------
+1 Yes      |                 0 |                 1 |                 2 |                 1 |                  4
+           |              0.00 |              3.33 |              6.67 |              3.33 |              13.33
+           |              0.00 |             25.00 |             50.00 |             25.00 |             100.00
+           |              0.00 |             12.50 |             22.22 |             20.00 |              13.33
+-----------+-------------------+-------------------+-------------------+-------------------+-------------------
+2 No       |                 8 |                 7 |                 7 |                 4 |                 26
+           |             26.67 |             23.33 |             23.33 |             13.33 |              86.67
+           |             30.77 |             26.92 |             26.92 |             15.38 |             100.00
+           |            100.00 |             87.50 |             77.78 |             80.00 |              86.67
+-----------+-------------------+-------------------+-------------------+-------------------+-------------------
+Total      |                 8 |                 8 |                 9 |                 5 |                 30
+
+Statistics for Table of STROKE_CAT by BMI_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                3 2.0433       0.5635
+Likelihood Ratio Chi-Square               3 2.9934       0.3926
+
+Cramer's V                           0.2610
+Contingency Coefficient              0.2525
+
+WARNING: 63% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of STROKE_CAT by BMI_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.2610
+Cramer's V                           0.2610
+Contingency Coefficient              0.2525
+Gamma                               -0.5190
+Kendall's Tau-b                     -0.2203
+Stuart's Tau-c                      -0.1822
+Somers' D C|R (SMDCR)               -0.3942
+Somers' D R|C (SMDRC)               -0.1231
+Pearson Correlation                 -0.2370
+Spearman Correlation                -0.2406
+
+
+Cochran-Armitage Trend Test
+
+Chi-Square                           1.6847
+Pr > ChiSq                           0.1943
+
+
+Table of WEIGHT_STROKE by BMI_CAT
+
+WEIGHT_STROKE |          1 Normal |      2 Overweight |3 Moderately Obese |  4 Severely Obese |              Total
+--------------+-------------------+-------------------+-------------------+-------------------+-------------------
+1Yes          |                 0 |                 4 |                 0 |                 0 |                  4
+              |              0.00 |             13.33 |              0.00 |              0.00 |              13.33
+              |              0.00 |            100.00 |              0.00 |              0.00 |             100.00
+              |              0.00 |             50.00 |              0.00 |              0.00 |              13.33
+--------------+-------------------+-------------------+-------------------+-------------------+-------------------
+2No           |                 8 |                 4 |                 9 |                 5 |                 26
+              |             26.67 |             13.33 |             30.00 |             16.67 |              86.67
+              |             30.77 |             15.38 |             34.62 |             19.23 |             100.00
+              |            100.00 |             50.00 |            100.00 |            100.00 |              86.67
+--------------+-------------------+-------------------+-------------------+-------------------+-------------------
+Total         |                 8 |                 8 |                 9 |                 5 |                 30
+
+Statistics for Table of WEIGHT_STROKE by BMI_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                3 12.6923       0.0054
+Likelihood Ratio Chi-Square               3 12.4701       0.0059
+
+Cramer's V                           0.6504
+Contingency Coefficient              0.5452
+
+WARNING: 63% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of WEIGHT_STROKE by BMI_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.6504
+Cramer's V                           0.6504
+Contingency Coefficient              0.5452
+Gamma                                0.2727
+Kendall's Tau-b                      0.1290
+Stuart's Tau-c                       0.1067
+Somers' D C|R (SMDCR)                0.2308
+Somers' D R|C (SMDRC)                0.0721
+Pearson Correlation                  0.1372
+Spearman Correlation                 0.1409
+
+
+Cochran-Armitage Trend Test
+
+Chi-Square                           0.5647
+Pr > ChiSq                           0.4524
+
+
+Table of WEIGHT_ACTIVE by BMI_CAT
+
+WEIGHT_ACTIVE |          1 Normal |      2 Overweight |3 Moderately Obese |  4 Severely Obese |              Total
+--------------+-------------------+-------------------+-------------------+-------------------+-------------------
+1Yes          |                 0 |                 1 |                 1 |                 0 |                  2
+              |              0.00 |              3.33 |              3.33 |              0.00 |               6.67
+              |              0.00 |             50.00 |             50.00 |              0.00 |             100.00
+              |              0.00 |             12.50 |             11.11 |              0.00 |               6.67
+--------------+-------------------+-------------------+-------------------+-------------------+-------------------
+2No           |                 8 |                 7 |                 8 |                 5 |                 28
+              |             26.67 |             23.33 |             26.67 |             16.67 |              93.33
+              |             28.57 |             25.00 |             28.57 |             17.86 |             100.00
+              |            100.00 |             87.50 |             88.89 |            100.00 |              93.33
+--------------+-------------------+-------------------+-------------------+-------------------+-------------------
+Total         |                 8 |                 8 |                 9 |                 5 |                 30
+
+Statistics for Table of WEIGHT_ACTIVE by BMI_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                3 1.6518       0.6477
+Likelihood Ratio Chi-Square               3 2.3885       0.4958
+
+Cramer's V                           0.2346
+Contingency Coefficient              0.2284
+
+WARNING: 63% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of WEIGHT_ACTIVE by BMI_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.2346
+Cramer's V                           0.2346
+Contingency Coefficient              0.2284
+Gamma                               -0.1220
+Kendall's Tau-b                     -0.0366
+Stuart's Tau-c                      -0.0222
+Somers' D C|R (SMDCR)               -0.0893
+Somers' D R|C (SMDRC)               -0.0150
+Pearson Correlation                 -0.0340
+Spearman Correlation                -0.0400
+
+
+Cochran-Armitage Trend Test
+
+Chi-Square                           0.0347
+Pr > ChiSq                           0.8523
+
+
+Table of WEIGHT_AGE by BMI_CAT
+
+WEIGHT_AGE |          1 Normal |      2 Overweight |3 Moderately Obese |  4 Severely Obese |              Total
+-----------+-------------------+-------------------+-------------------+-------------------+-------------------
+1Yes       |                 0 |                 0 |                 0 |                 2 |                  2
+           |              0.00 |              0.00 |              0.00 |              6.67 |               6.67
+           |              0.00 |              0.00 |              0.00 |            100.00 |             100.00
+           |              0.00 |              0.00 |              0.00 |             40.00 |               6.67
+-----------+-------------------+-------------------+-------------------+-------------------+-------------------
+2No        |                 8 |                 8 |                 9 |                 3 |                 28
+           |             26.67 |             26.67 |             30.00 |             10.00 |              93.33
+           |             28.57 |             28.57 |             32.14 |             10.71 |             100.00
+           |            100.00 |            100.00 |            100.00 |             60.00 |              93.33
+-----------+-------------------+-------------------+-------------------+-------------------+-------------------
+Total      |                 8 |                 8 |                 9 |                 5 |                 30
+
+Statistics for Table of WEIGHT_AGE by BMI_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                3 10.7143       0.0134
+Likelihood Ratio Chi-Square               3 7.9657       0.0467
+
+Cramer's V                           0.5976
+Contingency Coefficient              0.5130
+
+WARNING: 63% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of WEIGHT_AGE by BMI_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.5976
+Cramer's V                           0.5976
+Contingency Coefficient              0.5130
+Gamma                               -1.0000
+Kendall's Tau-b                     -0.3661
+Stuart's Tau-c                      -0.2222
+Somers' D C|R (SMDCR)               -0.8929
+Somers' D R|C (SMDRC)               -0.1502
+Pearson Correlation                 -0.4164
+Spearman Correlation                -0.3999
+
+
+Cochran-Armitage Trend Test
+
+Chi-Square                           5.2022
+Pr > ChiSq                           0.0226
+
+
+Table of SEX_CAT by BMI_CAT
+
+SEX_CAT  |          1 Normal |      2 Overweight |3 Moderately Obese |  4 Severely Obese |              Total
+---------+-------------------+-------------------+-------------------+-------------------+-------------------
+1 Male   |                 2 |                 6 |                 4 |                 3 |                 15
+         |              6.67 |             20.00 |             13.33 |             10.00 |              50.00
+         |             13.33 |             40.00 |             26.67 |             20.00 |             100.00
+         |             25.00 |             75.00 |             44.44 |             60.00 |              50.00
+---------+-------------------+-------------------+-------------------+-------------------+-------------------
+2 female |                 6 |                 2 |                 5 |                 2 |                 15
+         |             20.00 |              6.67 |             16.67 |              6.67 |              50.00
+         |             40.00 |             13.33 |             33.33 |             13.33 |             100.00
+         |             75.00 |             25.00 |             55.56 |             40.00 |              50.00
+---------+-------------------+-------------------+-------------------+-------------------+-------------------
+Total    |                 8 |                 8 |                 9 |                 5 |                 30
+
+Statistics for Table of SEX_CAT by BMI_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                3 4.3111       0.2298
+Likelihood Ratio Chi-Square               3 4.4987       0.2124
+
+Cramer's V                           0.3791
+Contingency Coefficient              0.3545
+
+WARNING: 100% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of SEX_CAT by BMI_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      0.3791
+Cramer's V                           0.3791
+Contingency Coefficient              0.3545
+Gamma                               -0.2229
+Kendall's Tau-b                     -0.1425
+Stuart's Tau-c                      -0.1733
+Somers' D C|R (SMDCR)               -0.1733
+Somers' D R|C (SMDRC)               -0.1171
+Pearson Correlation                 -0.1590
+Spearman Correlation                -0.1556
+
+
+Cochran-Armitage Trend Test
+
+Chi-Square                           0.7583
+Pr > ChiSq                           0.3838
+
+                                                   The FREQ Procedure
+
+Table of AGE_CAT by BMI_CAT
+
+AGE_CAT     |          1 Normal |      2 Overweight |3 Moderately Obese |  4 Severely Obese |              Total
+------------+-------------------+-------------------+-------------------+-------------------+-------------------
+1 AGE=40-49 |                 8 |                 0 |                 0 |                 0 |                  8
+            |             26.67 |              0.00 |              0.00 |              0.00 |              26.67
+            |            100.00 |              0.00 |              0.00 |              0.00 |             100.00
+            |            100.00 |              0.00 |              0.00 |              0.00 |              26.67
+------------+-------------------+-------------------+-------------------+-------------------+-------------------
+2 AGE=50-59 |                 0 |                 8 |                 0 |                 0 |                  8
+            |              0.00 |             26.67 |              0.00 |              0.00 |              26.67
+            |              0.00 |            100.00 |              0.00 |              0.00 |             100.00
+            |              0.00 |            100.00 |              0.00 |              0.00 |              26.67
+------------+-------------------+-------------------+-------------------+-------------------+-------------------
+3 AGE=60-69 |                 0 |                 0 |                 7 |                 0 |                  7
+            |              0.00 |              0.00 |             23.33 |              0.00 |              23.33
+            |              0.00 |              0.00 |            100.00 |              0.00 |             100.00
+            |              0.00 |              0.00 |             77.78 |              0.00 |              23.33
+------------+-------------------+-------------------+-------------------+-------------------+-------------------
+4 AGE=70-79 |                 0 |                 0 |                 2 |                 3 |                  5
+            |              0.00 |              0.00 |              6.67 |             10.00 |              16.67
+            |              0.00 |              0.00 |             40.00 |             60.00 |             100.00
+            |              0.00 |              0.00 |             22.22 |             60.00 |              16.67
+------------+-------------------+-------------------+-------------------+-------------------+-------------------
+5 AGE=80+   |                 0 |                 0 |                 0 |                 2 |                  2
+            |              0.00 |              0.00 |              0.00 |              6.67 |               6.67
+            |              0.00 |              0.00 |              0.00 |            100.00 |             100.00
+            |              0.00 |              0.00 |              0.00 |             40.00 |               6.67
+------------+-------------------+-------------------+-------------------+-------------------+-------------------
+Total       |                 8 |                 8 |                 9 |                 5 |                 30
+
+Statistics for Table of AGE_CAT by BMI_CAT
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                               12 78.8000       0.0000
+Likelihood Ratio Chi-Square              12 75.1552       0.0000
+
+Cramer's V                           0.9357
+Contingency Coefficient              0.8510
+
+WARNING: 100% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+Statistics for Table of AGE_CAT by BMI_CAT
+
+Statistic                             Value          ASE
+--------------------------------------------------------
+Phi Coefficient                      1.6207
+Cramer's V                           0.9357
+Contingency Coefficient              0.8510
+Gamma                                1.0000
+Kendall's Tau-b                      0.9620
+Stuart's Tau-c                       0.9689
+Somers' D C|R (SMDCR)                0.9424
+Somers' D R|C (SMDRC)                0.9820
+Pearson Correlation                  0.9683
+Spearman Correlation                 0.9826
+
+
+Cochran-Mantel-Haenszel Statistics for Table of AGE_CAT by BMI_CAT
+
+Statistic                             Value     DF         Prob
+--------------------------------------------------------------
+Nonzero Correlation                 27.1878      1       0.0000
+Row Mean Scores Differ              27.9444      4       0.0000
+General Association                 76.1733     12       0.0000
+

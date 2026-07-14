@@ -1,0 +1,65 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T043649Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library NHIS uses 1 concatenated paths.
+NOTE: DATA NHIS.SAMADULT
+
+NOTE: Processing inline DATALINES (30 lines)
+
+NOTE: Read 30 rows from DATALINES.
+NOTE: Wrote NHIS.SAMADULT (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA NHIS.SAMADULT2
+
+
+NOTE: Read 30 rows from NHIS.SAMADULT.
+NOTE: Wrote NHIS.SAMADULT2 (30 rows, 16 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA NHIS.SAMADULT3
+
+
+NOTE: Read 30 rows from NHIS.SAMADULT2.
+NOTE: Wrote NHIS.SAMADULT3 (30 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC CONTENTS data=NHIS.SAMADULT3
+
+NOTE: PROC CONTENTS completed: 30 observations, 13 variables
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_bmi_cat.spec.json
+NOTE: ODS plot written: freq_stroke_cat.spec.json
+NOTE: ODS plot written: freq_age_p.spec.json
+NOTE: ODS plot written: freq_r_maritl.spec.json
+NOTE: ODS plot written: freq_weight_stroke.spec.json
+NOTE: ODS plot written: freq_weight_age.spec.json
+NOTE: ODS plot written: freq_weight_active.spec.json
+NOTE: ODS plot written: freq_mracbpi2.spec.json
+NOTE: ODS plot written: freq_sex.spec.json
+NOTE: ODS plot written: freq_age_cat.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_weight_stroke_stroke_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_weight_active_stroke_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_weight_age_stroke_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_sex_stroke_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_age_cat_stroke_cat.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_stroke_cat_bmi_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_weight_stroke_bmi_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_weight_active_bmi_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_weight_age_bmi_cat.spec.json
+NOTE: ODS plot written: freq_mosaic_sex_cat_bmi_cat.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_age_cat_bmi_cat.spec.json
+NOTE: PROC FREQ statement used.

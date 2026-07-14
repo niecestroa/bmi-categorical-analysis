@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_partial_prop_odds_unequalslopes",
+  "source_file": "professional/code/BMI Categorical Updated.sas",
+  "source_blob_sha": "d6fe660671d0c3fadc98ed8119adde2d16ebb17d",
+  "source_commit": "383385881df8ad42ae7b5b4f718277b36db67eab",
+  "notes": "Section 9-10 partial proportional-odds PROC LOGISTIC using the UNEQUALSLOPES option for AGE_CAT and SEX_CAT, plus the ODDSRATIO statement (the project's headline model). NHIS.SAMADULT is a synthetic 30-row sample (no real NHIS microdata shipped); the script's derived-variable logic and PROCs are unmodified."
+}

@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-14T06:16:11Z",
+  "_captured_run_id": "r_3faf1e80e6a14b4a93497bad598fb3b4",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote NHIS.SAMADULT2 (30 rows, 16 columns).",
+    "NOTE: Wrote NHIS.SAMADULT3 (30 rows, 13 columns).",
+    "NOTE: PROC CONTENTS completed: 30 observations, 13 variables",
+    "NOTE: PROC FREQ statement used."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
