@@ -3,7 +3,7 @@
 
 ---
 
-# ** Abstract**
+# **Abstract**
 
 **Background:**  
 Body mass index (BMI) is a widely used indicator of obesity‑related health risk, and stroke remains a major cause of morbidity among U.S. adults. Understanding whether stroke history is associated with higher BMI categories may provide insight into functional limitations, lifestyle changes, and chronic disease burden. Using nationally representative data from the 2018 National Health Interview Survey (NHIS), this study evaluates the relationship between stroke history and BMI category among adults aged 40 years and older.
